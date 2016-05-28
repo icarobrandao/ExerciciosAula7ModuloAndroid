@@ -9,13 +9,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-    <activity android:name="com.exemple.icarobrandao.aula7.activities.MainActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
-            <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
-    </activity>
-        <activity android:name="com.exemple.icarobrandao.aula7.activities.RegisterActivity"/>
+
+    <meta-data android:name="DATABASE" android:value="aula7.db" />
+    <meta-data android:name="VERSION" android:value="1" />
+    <meta-data android:name="QUERY_LOG" android:value="false" />
+    <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.exemple.icarobrandao.aula7.models" />
+
+        <activity android:name="com.exemple.icarobrandao.aula7.activities.MainSugarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.exemple.icarobrandao.aula7.activities.RegisterSugarActivity"/>
         <activity android:name="com.exemple.icarobrandao.aula7.activities.UpdateActivity"/>
     </application>
 
